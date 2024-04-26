@@ -116,6 +116,8 @@ const lead = reactive({
   industry: '',
   status: '',
   lead_owner: '',
+  source: '',
+  remarks: '',
 })
 
 const allFields = computed(() => {
@@ -161,6 +163,19 @@ const allFields = computed(() => {
           type: 'link',
           doctype: 'Gender',
           placeholder: 'Male',
+        },
+        {
+          label: 'Source',
+          name: 'source',
+          type: 'link',
+          doctype: 'CRM Lead Source',
+          placeholder: '',
+        },
+        {
+          label: 'Remarks',
+          name: 'remarks',
+          type: 'long_text',
+          placeholder: '',
         },
       ],
     },

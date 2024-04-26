@@ -192,6 +192,9 @@ let newLead = reactive({
   email: '',
   mobile_no: '',
   lead_owner: '',
+  territory: '',
+  source: '',
+  remarks: '',
 })
 
 const createLead = createResource({
